@@ -1,0 +1,119 @@
+# ============================================================
+# PYTHON
+# ============================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.venv/
+env/
+ENV/
+
+# Python cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+
+# ============================================================
+# JUPYTER
+# ============================================================
+
+.ipynb_checkpoints/
+
+
+# ============================================================
+# DATASET
+# ============================================================
+
+# Raw medical images
+dataset/raw/images/
+
+# Selected medical images
+dataset/selected_images/
+
+# Processed CSV files
+dataset/processed/*.csv
+
+# Selected dataset metadata
+dataset/selected_images.csv
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+
+
+# ============================================================
+# TRAINED MODELS
+# ============================================================
+
+models/*.keras
+models/*.h5
+models/*.hdf5
+models/*.weights.h5
+
+
+# ============================================================
+# RESULTS
+# ============================================================
+
+results/plots/*
+results/metrics/*
+results/predictions/*
+
+
+# ============================================================
+# TENSORFLOW / KERAS
+# ============================================================
+
+*.ckpt
+checkpoint
+checkpoints/
+
+
+# ============================================================
+# IDE / EDITOR
+# ============================================================
+
+.vscode/
+.idea/
+
+# VS Code settings
+*.code-workspace
+
+
+# ============================================================
+# OS FILES
+# ============================================================
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+
+# ============================================================
+# LOGS
+# ============================================================
+
+*.log
+
+
+# ============================================================
+# ENVIRONMENT / SECRETS
+# ============================================================
+
+.env
+.env.*
+!.env.example
+# Ignore local medical datasets
+dataset/
+
+# Ignore accidental root-level file
+/dir
